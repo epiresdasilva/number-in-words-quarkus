@@ -1,4 +1,4 @@
-service: hello-lambda
+service: number-in-words
 
 frameworkVersion: ">=1.41.1"
 
@@ -6,7 +6,7 @@ provider:
   name: aws
   runtime: provided
   stage: dev
-  region: eu-central-1
+  region: sa-east-1
   tracing:
     lambda: true
 
@@ -14,10 +14,10 @@ custom:
   type: ${opt:type, 'java'}
 
 package:
-  artifact: target/function-${self:custom.type}/amazon-lambda-dynamodb-1.0-SNAPSHOT.zip
+  artifact: target/function-${self:custom.type}/number-in-words-quarkus-1.0-SNAPSHOT.zip
 
 functions:
-  hello:
+  quarkus:
     handler: Handler
     events:
       - http:

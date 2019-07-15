@@ -1,9 +1,9 @@
-package io.github.marcinczeczko;
+package br.com.evandropires.numberinwords.function;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 @ApplicationPath("/hello")
-public class HelloApp extends Application {
+public class NumberInWordsApp extends Application {
 
 }
