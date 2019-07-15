@@ -22,4 +22,4 @@ functions:
     events:
       - http:
           method: get
-          path: user
+          path: number-in-words
